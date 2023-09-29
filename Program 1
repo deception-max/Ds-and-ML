@@ -30,3 +30,17 @@ op=np.outer(a,b)
 print("\nOuter product:%s \n"%op)
 ep=np.multiply(a,b)
 print("\nElement wide product:%s \n"%ep)
+
+import numpy as np
+x=np.array([[1,2],[3,4]])
+print("Original x: \n%s" %x)
+print("\nTranspose of x: \n%s" %x.T)
+
+from numpy import array
+from scipy.linalg import svd
+A=array([[1,2],[3,4],[5,6]])
+print("A: \n%s" %A)
+U,S,VT=svd(A)
+print("\nU: \n%s" %U)
+print("\nS: \n%s" %S)
+print("\nVaT: \n%s" %VT)
